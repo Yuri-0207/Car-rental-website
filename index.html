@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- boxicon link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>AutoLoc Dz</title>
+  </head>
+  <body>
+    <!-- ------------------------------------LANDING SECTION----------------------------------------- -->
+    <main id="home" class="landingPage">
+      <header>
+        <a href="#home" class="logo"
+          ><img src="AutoLocDz.png" alt="AutoLoc"
+        /></a>
+        <i class="bx bx-menu" onclick="changeIcon(this)"></i>
+        <ul class="nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#ride">Ride</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li>
+            <label class="toggle">
+              <input type="checkbox" id="dark-mode-toggle" />
+              <span class="slider"></span>
+            </label>
+          </li>
+        </ul>
+        <div class="registre">
+          <a href="#" class="up">Sign Up</a>
+          <a href="#" class="in">Sign in</a>
+        </div>
+      </header>
+      <section>
+        <article class="text">
+          <h1><span>Looking</span> to rent a car</h1>
+          <p>
+            Drive performance and your cross-functional collaboration with
+            easy-to-use dashboards.
+          </p>
+          <a href="https://www.apple.com/app-store/"
+            ><img src="appStore.png" alt="" width="80rem"
+          /></a>
+          <a href="https://play.google.com/store/apps;"
+            ><img src="googlePlaypng.png" alt="" width="80rem"
+          /></a>
+        </article>
+        <aside>
+          <div class="backg"></div>
+          <img src="backtig.png" alt="" />
+        </aside>
+      </section>
+      <!-- the pick up form  -->
+      <div class="form-container">
+        <form action="">
+          <div class="input-box one">
+            <label for="search">Location</label>
+            <input
+              type="search"
+              name=""
+              id="search"
+              placeholder="Search Places"
+            />
+          </div>
+          <div class="input-box two">
+            <label for="pick">Pick-Up Data</label>
+            <input type="date" name="" id="pick" />
+          </div>
+          <div class="input-box three">
+            <label for="return">Return Data</label>
+            <input type="date" name="" id="return" />
+          </div>
+          <input type="submit" value="submit" class="btn" />
+        </form>
+      </div>
+    </main>
+    <!-- ------------------------------------LANDING END SECTION----------------------------------------- -->
+    <!-- ------------------------------------RIDE SECTION----------------------------------------- -->
+    <main id="ride" class="ride">
+      <div class="heading sReveal">
+        <p>how it works</p>
+        <h2>Rent With Easy Steps</h2>
+      </div>
+      <article class="steps">
+        <div class="step location">
+          <i class="bx bx-current-location"></i>
+          <h3>Choose Location</h3>
+          <p>
+            Let us know your location to provide you the best options we have
+            for you, and don't be afraid, we have a car delivery service for you
+          </p>
+        </div>
+        <div class="step pickup">
+          <i class="bx bxs-calendar-check"></i>
+          <h3>Pick-Up Date</h3>
+          <p>
+            Choose the date that suits you to pick your car, that step makes it
+            easier for us to know the available cars
+          </p>
+        </div>
+        <div class="step book">
+          <i class="bx bxs-car"></i>
+          <h3>Book Your Car</h3>
+          <p>
+            Take a look in our car range and categories and choose the right one
+            for you and your circumstances with the best prices
+          </p>
+        </div>
+        <div class="step select">
+          <i class="bx bxs-user-plus"></i>
+          <h3>Select Services</h3>
+          <p>
+            Take advantage from our provided services in the way that matches
+            your desires, from car delivery to personal drivers
+          </p>
+        </div>
+      </article>
+    </main>
+    <!-- ------------------------------------RIDE END SECTION----------------------------------------- -->
+    <!-- ------------------------------------SERVICES SECTION----------------------------------------- -->
+    <main class="services" id="services">
+      <div class="heading sReveal">
+        <p>Best services</p>
+        <h2>Explore Out Top Deals</h2>
+      </div>
+      <section class="slider-container sReveal">
+        <nav>
+          <ul class="items">
+            <li class="item actif" data-name="berline">Berline</li>
+            <li class="item" data-name="citadine">Citadine</li>
+            <li class="item" data-name="ludospace">Ludospace</li>
+            <li class="item" data-name="monospace">Monospace</li>
+            <li class="item" data-name="suv">SUV</li>
+            <li class="item" data-name="hatchback">Hatchback</li>
+          </ul>
+        </nav>
+        <div class="gallery">
+          <!-- ------------------BERLINE CATEGORY-------------------- -->
+          <div class="image sReveal" data-name="berline">
+            <span
+              ><img src="cars/Skoda-Octavia-2020-wallpaper.jpg" alt="" />
+            </span>
+            <p class="name">Skoda Octavia</p>
+            <p class="year">2020</p>
+            <input type="submit" value="Rent Now" class="btn" />
+          </div>
+          <div class="image sReveal" data-name="berline">
+            <span
+              ><img src="cars/Volkswagen-Passat-2020-wallpaper.jpg" alt="" />
+            </span>
+            <p class="name">Volkswagen Passat</p>
+            <p class="year">2020</p>
+            <input type="submit" value="Rent Now" class="btn" />
+          </div>
+          <div class="image sReveal" data-name="berline">
+            <span
+              ><img src="cars/Dacia-Logan-2021-wallpaper.jpg" alt="" />
+            </span>
+            <p class="name">Dacia Logan</p>
+            <p class="year">2021</p>
+            <input type="submit" value="Rent Now" class="btn" />
+          </div>
+          <div class="image sReveal" data-name="berline">
+            <span
+              ><img src="cars/Hyundai-Accent-2018-wallpaper.jpg" alt="" />
+            </span>
+            <p class="name">Hyundai Accent</p>
+            <p class="year">2018</p>
+            <input type="submit" value="Rent Now" class="btn" />
+          </div>
+          <!-- ------------------CITADINE CATEGORY-------------------- -->
+          <div class="image sReveal" data-name="citadine">
+            <span
+              ><img src="cars/Renault-Clio-2020-wallpaper.jpg" alt="" />
+            </span>
+            <p class="name">Renault Clio</p>
+            <p class="year">2020</p>
+            <input type="submit" value="Rent Now" class="btn" />
+          </div>
+          <div class="image sReveal" data-name="citadine">
+            <span
+              ><img src="cars/Citroen-C3-2020-wallpaper.jpg" alt="" />
+            </span>
+            <p class="name">Citroen C3</p>
+            <p class="year">2020</p>
+            <input type="submit" value="Rent Now" class="btn" />
+          </div>
+          <div class="image sReveal" data-name="citadine">
+            <span
+              ><img
+                src="cars/Dacia-Sandero_Stepway-2021-wallpaper.jpg"
+                alt=""
+              />
+            </span>
+            <p class="name">Dacia Stepway</p>
+            <p class="year">2021</p>
+            <input type="submit" value="Rent Now" class="btn" />
+          </div>
+          <div class="image sReveal" data-name="citadine">
+            <span
+              ><img src="cars/Ford-Fiesta_ST-2018-wallpaper.jpg" alt="" />
+            </span>
+            <p class="name">Ford Fiesta</p>
+            <p class="year">2018</p>
+            <input type="submit" value="Rent Now" class="btn" />
+          </div>
+          <div class="image sReveal" data-name="citadine">
+            <span
+              ><img src="cars/Renault-Captur-2020-wallpaper.jpg" alt="" />
+            </span>
+            <p class="name">Renault Captur</p>
+            <p class="year">2020</p>
+            <input type="submit" value="Rent Now" class="btn" />
+          </div>
+          <div class="image sReveal" data-name="citadine">
+            <span
+              ><img src="cars/Peugeot-e-208-2020-wallpaper.jpg" alt="" />
+            </span>
+            <p class="name">Peugeot 208</p>
+            <p class="year">2020</p>
+            <input type="submit" value="Rent Now" class="btn" />
+          </div>
+          <!-- ------------------LUDOSPACE CATEGORY-------------------- -->
+          <div class="image sReveal" data-name="ludospace">
+            <span
+              ><img src="cars/Citroen-Berlingo-2016-wallpaper.jpg" alt="" />
+            </span>
+            <p class="name">Citroen Berlingo</p>
+            <p class="year">2016</p>
+            <input type="submit" value="Rent Now" class="btn" />
+          </div>
+          <div class="image sReveal" data-name="ludospace">
+            <span
+              ><img src="cars/Fiat-Doblo-2015-wallpaper.jpg" alt="" />
+            </span>
+            <p class="name">Fiat Doblo</p>
+            <p class="year">2015</p>
+            <input type="submit" value="Rent Now" class="btn" />
+          </div>
+          <div class="image sReveal" data-name="ludospace">
+            <span
+              ><img src="cars/Volkswagen-Caddy-2016-wallpaper.jpg" alt="" />
+            </span>
+            <p class="name">Volkswagen Caddy</p>
+            <p class="year">2016</p>
+            <input type="submit" value="Rent Now" class="btn" />
+          </div>
+          <div class="image sReveal" data-name="ludospace">
+            <span
+              ><img src="cars/Peugeot-Rifter-2019-wallpaper.jpg" alt="" />
+            </span>
+            <p class="name">Peugeot Rifter</p>
+            <p class="year">2019</p>
+            <input type="submit" value="Rent Now" class="btn" />
+          </div>
+          <!-- ------------------MONOSPACE CATEGORY-------------------- -->
+          <div class="image sReveal" data-name="monospace">
+            <span
+              ><img src="cars/Volkswagen-Touran-2016-wallpaper.jpg" alt="" />
+            </span>
+            <p class="name">Volkswagen Touran</p>
+            <p class="year">2016</p>
+            <input type="submit" value="Rent Now" class="btn" />
+          </div>
+          <div class="image sReveal" data-name="monospace">
+            <span
+              ><img src="cars/Ford-S-MAX-2020-wallpaper.jpg" alt="" />
+            </span>
+            <p class="name">Ford S-Max</p>
+            <p class="year">2020</p>
+            <input type="submit" value="Rent Now" class="btn" />
+          </div>
+          <div class="image sReveal" data-name="monospace">
+            <span
+              ><img src="cars/Kia-Carens-2023-wallpaper.jpg" alt="" />
+            </span>
+            <p class="name">Kia Carens</p>
+            <p class="year">2023</p>
+            <input type="submit" value="Rent Now" class="btn" />
+          </div>
+          <div class="image sReveal" data-name="monospace">
+            <span
+              ><img src="cars/Renault-Grand_Scenic-2017-wallpaper.jpg" alt="" />
+            </span>
+            <p class="name">Renault Scenic</p>
+            <p class="year">2017</p>
+            <input type="submit" value="Rent Now" class="btn" />
+          </div>
+          <!-- ------------------SUV CATEGORY-------------------- -->
+          <div class="image sReveal" data-name="suv">
+            <span
+              ><img src="cars/Renault-Kadjar-2019-wallpaper.jpg" alt="" />
+            </span>
+            <p class="name">Renault Kadjar</p>
+            <p class="year">2019</p>
+            <input type="submit" value="Rent Now" class="btn" />
+          </div>
+          <div class="image sReveal" data-name="suv">
+            <span
+              ><img src="cars/Hyundai-Tucson-2021-wallpaper.jpg" alt="" />
+            </span>
+            <p class="name">Hyundai Tucson</p>
+            <p class="year">2021</p>
+            <input type="submit" value="Rent Now" class="btn" />
+          </div>
+          <div class="image sReveal" data-name="suv">
+            <span
+              ><img src="cars/Volkswagen-Tiguan-2021-wallpaper.jpg" alt="" />
+            </span>
+            <p class="name">Volkswagen Tiguan</p>
+            <p class="year">2021</p>
+            <input type="submit" value="Rent Now" class="btn" />
+          </div>
+          <div class="image sReveal" data-name="suv">
+            <span
+              ><img src="cars/Peugeot-3008-2021-wallpaper.jpg" alt="" />
+            </span>
+            <p class="name">Peugeot 3008</p>
+            <p class="year">2021</p>
+            <input type="submit" value="Rent Now" class="btn" />
+          </div>
+          <div class="image sReveal" data-name="suv">
+            <span
+              ><img src="cars/Dacia-Duster-2022-wallpaper.jpg" alt="" />
+            </span>
+            <p class="name">Dacia Duster</p>
+            <p class="year">2022</p>
+            <input type="submit" value="Rent Now" class="btn" />
+          </div>
+          <!-- ------------------HATCHBACK CATEGORY-------------------- -->
+          <div class="image sReveal" data-name="hatchback">
+            <span
+              ><img src="cars/Toyota-Yaris-2015-wallpaper.jpg" alt="" />
+            </span>
+            <p class="name">Toyota Yaris</p>
+            <p class="year">2015</p>
+            <input type="submit" value="Rent Now" class="btn" />
+          </div>
+          <div class="image sReveal" data-name="hatchback">
+            <span
+              ><img src="cars/Kia-Picanto-2021-wallpaper.jpg" alt="" />
+            </span>
+            <p class="name">Kia Picanto</p>
+            <p class="year">2021</p>
+            <input type="submit" value="Rent Now" class="btn" />
+          </div>
+          <div class="image sReveal" data-name="hatchback">
+            <span
+              ><img
+                src="cars/Hyundai_i10_(LA)_at_IAA_2019_IMG_0687.jpg"
+                alt=""
+              />
+            </span>
+            <p class="name">Hyundai i10</p>
+            <p class="year">2019</p>
+            <input type="submit" value="Rent Now" class="btn" />
+          </div>
+          <div class="image sReveal" data-name="hatchback">
+            <span><img src="cars/Fiat-500-2021-wallpaper.jpg" alt="" /> </span>
+            <p class="name">Fiat 500</p>
+            <p class="year">2021</p>
+            <input type="submit" value="Rent Now" class="btn" />
+          </div>
+        </div>
+        <div class="preview-box">
+          <div class="details">
+            <span class="title">
+              <p>Not defined</p>
+            </span>
+            <span class="icon bx bx-x"></span>
+          </div>
+          <div class="image-box">
+            <img src="" alt="" />
+          </div>
+        </div>
+        <div class="shadow"></div>
+      </section>
+    </main>
+    <!-- ------------------------------------SERVICES END SECTION----------------------------------------- -->
+    <!-- ------------------------------------ABOUT US SECTION----------------------------------------- -->
+    <main class="about" id="about">
+      <div class="heading sReveal">
+        <p>about us</p>
+        <h2>Best Customer Experience</h2>
+      </div>
+      <section class="about-container sReveal">
+        <div class="left-bg">
+          <img src="backcaptur.png" alt="" />
+        </div>
+        <article>
+          <h3>About us</h3>
+          <p class="txt">
+            As an exclusive Rental website service in Algeria, we have been
+            ensuring for all our time in the Market that you get to your wanted
+            choice and need easily, we're exclusevily disponible in Oran, you
+            can look forward to a professional Team and Service and the comfort
+            of getting everything done easily and in comfort.
+          </p>
+          <a href="#about">Learn More</a>
+        </article>
+      </section>
+    </main>
+    <!-- ------------------------------------ABOUT END SECTION----------------------------------------- -->
+    <!-- ------------------------------------REVIEWS SECTION----------------------------------------- -->
+    <main class="reviews" id="reviews">
+      <div class="heading sReveal">
+        <p>reviews</p>
+        <h2>Our Clients Testimonials</h2>
+      </div>
+      <section>
+        <button class="pre-btn"><i class="bx bx-chevrons-right"></i></button>
+        <button class="nxt-btn"><i class="bx bx-chevrons-right"></i></button>
+        <div class="container">
+          <div class="card sReveal">
+            <div class="image">
+              <img src="taki.jpg" class="thumb" alt="" />
+            </div>
+            <div class="info">
+              <h2 class="name">Gatta3 Rassah</h2>
+              <p class="short-description">
+                li takel 3la sh9ah ma ynejemlish bessa7 kharjin fiya les
+                controleurs t3 Tram
+              </p>
+              <span class="rate"
+                >Rate:<i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                ><i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                ><i class="bx bxs-star"></i
+              ></span>
+            </div>
+          </div>
+          <div class="card sReveal">
+            <div class="image">
+              <img src="ali.jpg" class="thumb" alt="" />
+            </div>
+            <div class="info">
+              <h2 class="name">Ali Handsome</h2>
+              <p class="short-description">
+                fel gaming mkansh li y9adli w fel salla gelbek nkharjahlek
+                bessa7 Bey klatli glbi 💔🥺
+              </p>
+              <span class="rate"
+                >Rate:<i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                ><i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                ><i class="bx bxs-star"></i
+              ></span>
+            </div>
+          </div>
+          <div class="card sReveal">
+            <div class="image">
+              <img src="riadh.jpg" class="thumb" alt="" />
+            </div>
+            <div class="info">
+              <h2 class="name">Riadh Mahrez</h2>
+              <p class="short-description">
+                ana jamais krit 3lihom w jamais chethom mais rahom mdakhlinli
+                ismi bessif
+              </p>
+              <span class="rate"
+                >Rate:<i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                ><i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                ><i class="bx bxs-star"></i
+              ></span>
+            </div>
+          </div>
+          <div class="card sReveal">
+            <div class="image">
+              <img src="taki.jpg" class="thumb" alt="" />
+            </div>
+            <div class="info">
+              <h2 class="name">Gatta3 Rassah</h2>
+              <p class="short-description">
+                li takel 3la sh9ah ma ynejemlish bessa7 kharjin fiya les
+                controleurs t3 Tram
+              </p>
+              <span class="rate"
+                >Rate:<i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                ><i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                ><i class="bx bxs-star"></i
+              ></span>
+            </div>
+          </div>
+          <div class="card sReveal">
+            <div class="image">
+              <img src="ali.jpg" class="thumb" alt="" />
+            </div>
+            <div class="info">
+              <h2 class="name">Ali Handsome</h2>
+              <p class="short-description">
+                fel gaming mkansh li y9adli w fel salla gelbek nkharjahlek
+                bessa7 Bey klatli glbi 💔🥺
+              </p>
+              <span class="rate"
+                >Rate:<i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                ><i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                ><i class="bx bxs-star"></i
+              ></span>
+            </div>
+          </div>
+          <div class="card sReveal">
+            <div class="image">
+              <img src="riadh.jpg" class="thumb" alt="" />
+            </div>
+            <div class="info">
+              <h2 class="name">Riadh Mahrez</h2>
+              <p class="short-description">
+                ana jamais krit 3lihom w jamais chethom mais rahom mdakhlinli
+                ismi bessif
+              </p>
+              <span class="rate"
+                >Rate:<i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                ><i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                ><i class="bx bxs-star"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ------------------------------------REVIEWS END SECTION----------------------------------------- -->
+    <!-- ------------------------------------CONTACT SECTION----------------------------------------- -->
+    <main class="contact" id="contact">
+      <section class="container">
+        <div><img src="footer icon.png" alt="" /></div>
+        <div class="service">
+          <h3>Our Service</h3>
+          <p><i class="bx bx-radio-circle-marked"></i> Car Renting</p>
+          <p><i class="bx bx-radio-circle-marked"></i> Chaufeur Service</p>
+          <p><i class="bx bx-radio-circle-marked"></i> Car Delivery</p>
+        </div>
+        <div class="contacts">
+          <h3>Contacts</h3>
+          <div>
+            <div>
+              <i class="bx bx-location-plus"></i>
+              <p>45 Rue Colonel Lotfi<br />Bousfer, OR 31025</p>
+            </div>
+            <div>
+              <i class="bx bx-phone-call"></i>
+              <p>+213 333 456789</p>
+            </div>
+            <div>
+              <i class="bx bx-envelope"></i>
+              <p>info@autolocdz.com</p>
+            </div>
+            <div>
+              <i class="bx bxl-linkedin"></i>
+              <p>AutoLoc DZ</p>
+            </div>
+          </div>
+        </div>
+        <div class="locations">
+          <h3>Location</h3>
+          <p><i class="bx bx-location-plus"></i> Oran</p>
+          <p><i class="bx bx-location-plus"></i> Tlemcen</p>
+          <p><i class="bx bx-location-plus"></i> Algiers</p>
+          <p><i class="bx bx-location-plus"></i> Mostaganem</p>
+        </div>
+      </section>
+    </main>
+    <!-- ------------------------------------CONTACT END SECTION----------------------------------------- -->
+    <!-- ------------------------------------FOOTER SECTION----------------------------------------- -->
+    <footer>
+      <p>
+        &#169; AutoLocDz Car Rental - All rights reserved | Legal Notice |
+        Privacy Policy
+      </p>
+    </footer>
+    <script src="script/script.js"></script>
+  </body>
+</html>
